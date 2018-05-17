@@ -36,7 +36,7 @@
         </div>
       </div>
 
-      <div class="col-sm-12" id="review">
+      <div class="col-sm-12" id="add_review">
         <div class="panel panel-default card-view">
           <div class="panel-heading">
             <div class="pull-left">

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Review;
 use App\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
 
 
 class HomeController extends Controller
@@ -43,7 +45,7 @@ class HomeController extends Controller
 		$review->email = $request->get('email');
 		$review->content = $request->get('content');
 		$review->save();
-		return redirect()->back()->with('status', 'Ваш отзыв будет скоро добавлен');
+		return Redirect::to(URL::previous() . "#add_review")->with('status', 'Ваш отзыв будет скоро добавлен');
 	}
 	
 	
