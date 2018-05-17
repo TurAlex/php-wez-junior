@@ -26,23 +26,6 @@ class News extends Model {
 		];
 	}
 	
-	/**
-	 * Return comments related to news.
-	 *
-	 * @return object
-	 */
-	public function comments() {
-		return $this->hasMany( Comment::class );
-	}
-	
-	/**
-	 * Return all active comments related to news.
-	 *
-	 * @return Collection
-	 */
-	public function getComments() {
-		return $this->comments()->where( 'status', 1 )->get();
-	}
 	
 	/**
 	 * Save all protected fields to base of new news.

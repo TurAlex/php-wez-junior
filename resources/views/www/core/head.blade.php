@@ -15,3 +15,14 @@
 </head>
 
 <body>
+<div class="flex-center position-ref full-height">
+
+
+
+    <div class="links">
+      <a href="/">HOME</a>
+      <a href="/news">NEWS</a>
+      <a href="/reviews">REVIEWS</a>
+    </div>
+
+</div>

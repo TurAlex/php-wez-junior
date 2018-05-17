@@ -15,7 +15,7 @@
       <div class="panel-wrapper">
         <div class="panel-body">
           <div class="form-wrap">
-            {{ Form::open(['route' => 'comments.store']) }}
+            {{ Form::open(['route' => 'reviews.store']) }}
             <div class="form-group ">
               <label class="control-label mb-10 text-left">Имя</label>
               <input type="text" class="form-control" name="name" value="{{old('name')}}">
@@ -32,21 +32,13 @@
             </div>
 
             <div class="form-group mb-10">
-              <label class="control-label mb-10">Новость</label>
-              {{Form::select('news_id',
-                $newses,
-                null,
-                ['class' => 'form-control select2','placeholder' => 'Выберите к какой новости относится комментарий'])
-                }}
-            </div>
-            <div class="form-group mb-10">
-              <label class="control-label mb-10 text-left">Комментарий</label>
+              <label class="control-label mb-10 text-left">Отзыв</label>
               <textarea class="form-control" rows="5" name="content">{{old('content')}}</textarea>
             </div>
 
 
             <div class="form-group mb-10">
-              <a href="{{route('news.index')}}" type="button" class="btn btn-default btn-anim pull-left"><i
+              <a href="{{route('reviews.index')}}" type="button" class="btn btn-default btn-anim pull-left"><i
                     class="fas fa-arrow-left pt-10"></i><span class="btn-text">Назад</span></a>
               <button type="submit" class="btn btn-success btn-anim pull-right"><i class="icon-rocket"></i><span
                     class="btn-text">Добавить</span></button>

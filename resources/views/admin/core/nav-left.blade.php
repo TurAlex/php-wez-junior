@@ -8,9 +8,9 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('comments.index')}}">
+        <a class="nav-link" href="{{route('reviews.index')}}">
           <i class="far fa-comments"></i>
-          <span>Коментарии</span>
+          <span>Отзывы</span>
         </a>
       </li>
 
